@@ -33,5 +33,17 @@ public class PhoneBook {
     public String getView() {
         return getView();
     }
+
+    public boolean getContact(String response) {
+        return phoneBook.contains(response);
+    }
+
+    public void addContact(String name, String phoneNumber) {
+        phoneBook.add(name + " " + phoneNumber);
+    }
+
+    public void removeContact(String name, String phoneNumber) {
+        phoneBook.remove(name + " " + phoneNumber);
+    }
 }
 
